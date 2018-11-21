@@ -1,0 +1,125 @@
+header {
+  margin: 0 auto;
+  width: 100%;
+  height: 108px;
+  position: fixed;
+  z-index: 99999;
+  @media screen and (max-width: 1024px)  {
+    height: 75px;
+  }
+  .header-wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 1024px;
+    height: 100%;
+    background: transparent;
+    @media screen and (max-width: 1024px)  {
+      width: 100%;
+    }
+    .header-logo-wrapper {
+      display: flex;
+    }
+    .header-logo {
+      margin: auto;
+      width: 196px;
+      height: 251px;
+      background: linear-gradient(45deg, $brand-main, $brand-sub);
+      @media screen and (max-width: 1024px)  {
+        width: 170px;
+        height: 180px;
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 94px 0 0;
+        transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        &:hover {
+          opacity: 0.5;
+        }
+        @media screen and (max-width: 1024px)  {
+          display: flex;
+          padding: 0;
+        }
+      }
+      img {
+        display: block;
+        width: 136px;
+        margin: 0 auto;
+        @media screen and (max-width: 1024px)  {
+          margin: auto;
+          width: 125px;
+        }
+      }
+    }
+    nav {
+      height: 100%;
+      @media screen and (max-width: 1024px)  {
+        display: none;
+      }
+      ul {
+        display: flex;
+        height: 100%;
+        margin: 0;
+        a {
+          text-decoration-line: none;
+        }
+        li {
+          height: 100%;
+          padding: 0 15px;
+          line-height: 108px;
+          color: $brand-black;
+          font-size: 14px;
+          list-style: none;
+          &:hover {
+            background: $brand-foundation;
+            transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+          }
+          &.header-action-btn {
+            padding: 0 15px;
+            color: #fff;
+            background: $brand-accent;
+            &:hover {
+              opacity: 0.8;
+              transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sns-post-bar {
+  top: 50vh;
+  right: 100px;
+  position: fixed;
+  z-index: 99999;
+  @media screen and (max-width: 1024px)  {
+    top: auto;
+    bottom: 5px;
+    right: 5px;
+  }
+  ul {
+    @media screen and (max-width: 1024px)  {
+      display: flex;
+    }
+    li {
+      display: flex;
+      margin: 0 0 3px;
+      width: 68px;
+      height: 68px;
+      background: #fff;
+      list-style: none;
+      @media screen and (max-width: 1024px)  {
+        margin: 0 5px 3px 0;
+      }
+      img {
+        margin: auto;
+      }
+      &:hover {
+        background: $brand-foundation;
+      }
+    }
+  }
+}

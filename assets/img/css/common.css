@@ -1,0 +1,170 @@
+html{
+	width: 100%;
+	font-family: sans-serif;
+}
+
+body {
+	width: 100%;
+	font-size: 15px;
+	-webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a,a:hover,a:active,a:visited {
+	color: #000;
+	text-decoration: none;
+}
+
+
+/* clearfix */
+
+.clearfix:after {
+  content:"";
+  display:block;
+  clear:both;
+}
+
+/* flexbox */
+
+.flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.inline-flex {
+  display: -webkit-inline-flex;
+  display: inline-flex;
+}
+
+
+
+.wrap {
+	width: 1000px;
+}
+
+
+
+{
+	-webkit-transition: all .25s cubic-bezier(0.25,0.1,0.25,1.0);
+	        transition: all .25s cubic-bezier(0.25,0.1,0.25,1.0);
+	transform: scale(1.0);
+	animation: anime1 0.5s ease -2s infinite alternate;
+}
+
+@keyframes anime1 {
+0% {transform: scale(1.0);}
+100% {transform: scale(1.07);}
+}
+
+
+
+
+/* header */
+
+
+
+
+/* main */
+
+main {
+	width: 100%;
+}
+
+#canvas {
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    margin: auto;
+    width: 100%;
+    height: 130vh;
+    background-color: #67dfff;
+    position: fixed;
+    z-index: 1;
+}
+
+/* section */
+
+section {
+	width: 100%;
+	z-index: 99;
+	position: relative;
+}
+
+h1 img {
+	width: 100%;
+
+}
+
+.top-contents {
+	display: flex;
+	height: 100vh;
+}
+
+.top-contents--wrapper {
+	display: block;
+	width: 500px;
+	margin: auto;
+	letter-spacing: 2px;
+}
+
+.works--wrapper {
+	margin: 0 auto;
+	width: 75%;
+}
+
+.wrapper--article {
+	display: block;
+	list-style: none;
+	margin-bottom: 50px; 
+	padding: 40px;
+	width: 95%;
+	min-height: 630px;
+	background-color: #fff;
+	border-radius: 12px;
+}
+
+.wrapper--article img {
+	width: 100%;
+	height: 480px;
+}
+
+.article-head {
+	display: flex;
+	height: 75vh;
+	background-color: #fff;
+	opacity: 0.7;
+}
+
+.article-head__text-inner {
+	margin: auto;
+}
+
+body {
+	background-image: url(../img/posotsu.png);
+	background-size: cover;
+}
+
+main:after {
+	
+}
+
+
+
+/* footer */
+
+footer {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+@media screen (max-width: 480px) {
+
+  #canvas {
+    overflow: hidden;
+  }
+
+}
